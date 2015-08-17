@@ -1,0 +1,25 @@
+pkgbase = sddm-qt5-git
+	pkgdesc = QML based X11 display manager (Qt5 version from Git)
+	pkgver = v0.9.0
+	pkgrel = 1
+	url = https://github.com/sddm/sddm
+	install = sddm.install
+	arch = i686
+	arch = x86_64
+	license = GPL
+	makedepends = git
+	makedepends = cmake
+	makedepends = qt5-tools
+	makedepends = python-docutils
+	depends = qt5-declarative
+	depends = upower
+	provides = sddm
+	conflicts = sddm
+	conflicts = sddm-qt5
+	replaces = sddm
+	replaces = sddm-qt5
+	source = git://github.com/sddm/sddm.git
+	backup = usr/share/sddm/scripts/Xsetup
+
+pkgname = sddm-qt5-git
+
